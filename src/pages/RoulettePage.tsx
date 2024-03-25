@@ -4,8 +4,7 @@ import { family } from '@/constants/family';
 import { Roulette } from './Roulette';
 
 const RoulettePage = () => {
-  // const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [target, setTarget] = useState<string[]>(family);
+  const [target] = useState<string[]>(family);
 
   return (
     <div style={styles.pageWrap}>
