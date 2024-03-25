@@ -10,6 +10,11 @@ const styles = {
     // border: '1px solid black',
     flexGrow: 1,
   },
+  routeBadge: {
+    border: '1px solid black',
+    margin: '30px 20px',
+    padding: '10px 20px'
+  }
 };
 
 export default styles;
