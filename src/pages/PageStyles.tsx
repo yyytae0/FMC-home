@@ -4,8 +4,12 @@ const styles = {
     height: '100svh',
     display: 'flex',
     flexDirection: 'column' as 'column',
-    overflow: 'hidden',
-  }
-}
+    overflow: 'auto',
+  },
+  pageInnerWrap: {
+    border: '1px solid black',
+    flexGrow: 1,
+  },
+};
 
 export default styles;
