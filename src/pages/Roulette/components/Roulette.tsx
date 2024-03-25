@@ -58,7 +58,6 @@ const Roulette = ({ target }: props) => {
       const ran = Math.floor(Math.random() * target.length);
       const arc = 360 / target.length;
       const rotate = 3600 - 90 - ((ran * arc) + arc / 2);  // 회전수(10회) - 시작점 12시방향으로 설정 - (당첨 인덱스의 각도만큼 이동) - 당첨인덱스의 가운데로 위치
-      console.log(ran, arc, rotate)
       canvasRef.current.style.transform = `rotate(${rotate}deg)`;
       canvasRef.current.style.transition = '2s';
       setTimeout(() => {
@@ -74,8 +73,9 @@ const Roulette = ({ target }: props) => {
   return (
     <div>
       <div style={{marginBottom: '30px'}}>
-        당첨 {picked}
-
+        {
+          picked?`당첨 ${picked}`:'두구두구'
+        }
       </div>
       <div style={{ position: 'relative', minWidth: '300px' }}>
         <div
