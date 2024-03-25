@@ -1,7 +1,7 @@
 import styles from './PageStyles';
 import { useNavigate } from 'react-router-dom';
 
-const Entry = () => {
+const EntryPage = () => {
   const navigate = useNavigate();
   return (
     <div style={styles.pageWrap}>
@@ -19,4 +19,4 @@ const Entry = () => {
   );
 };
 
-export default Entry;
+export default EntryPage;
