@@ -7,7 +7,7 @@ const styles = {
     overflow: 'auto',
   },
   pageInnerWrap: {
-    border: '1px solid black',
+    // border: '1px solid black',
     flexGrow: 1,
   },
 };
