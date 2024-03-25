@@ -16,6 +16,14 @@ const EntryPage = () => {
           >
             룰렛
           </div>
+          <div
+            onClick={() => {
+              navigate('/marble');
+            }}
+            style={styles.routeBadge}
+          >
+            핀볼
+          </div>
         </div>
       </div>
     </div>
