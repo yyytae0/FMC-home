@@ -24,6 +24,14 @@ const EntryPage = () => {
           >
             핀볼
           </div>
+          <div
+            onClick={() => {
+              navigate('/musiq');
+            }}
+            style={styles.routeBadge}
+          >
+            뮤직큐
+          </div>
         </div>
       </div>
     </div>
