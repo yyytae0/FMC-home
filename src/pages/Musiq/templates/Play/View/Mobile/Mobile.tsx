@@ -1,6 +1,7 @@
 import { roomInfo } from "@/types/socket";
 import recordImg from '@/assets/images/record_disc.png'
 import { useState } from "react";
+import YouTube from "react-youtube";
 
 interface props {
   room: roomInfo;
@@ -11,6 +12,7 @@ const Mobile = ({room, leaveRoom}: props) => {
   return (
     <div style={{width: '100%', height: '100%', position: 'relative'}}>
       <div style={{width: '100%', height: '100%'}}>
+        <YouTube videoId="7ijwiqxvKVc" id='yt'/>
         <div style={{height: '50%', display: 'flex', flexDirection: 'column'}}>
           <div style={{height: '50px', padding: '5px'}}>
             <div style={{color: 'white', fontSize: '18px', fontWeight: 'bold'}}>{room.roomName}</div>
