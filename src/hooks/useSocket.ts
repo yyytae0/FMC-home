@@ -27,7 +27,7 @@ const useSocket = ({name}: props) => {
   const [nickname] = useState<string>(name);
 
   const connect = () => {
-    const socket = io('http://54.180.107.24:3000/');
+    const socket = io('https://server.xn--o39aa986az7k8lqy7a.site');
     setSocket(socket)
 
     socket.emit('login', {name: '123'});
