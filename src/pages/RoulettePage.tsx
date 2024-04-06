@@ -4,7 +4,13 @@ import { family } from '@/constants/family';
 import { Roulette } from './Roulette';
 
 const RoulettePage = () => {
-  const [target] = useState<string[]>(family);
+  const [target, setTarget] = useState<string[]>(family);
+  const [targetStr, setTargetStr] = useState<string>(target.join());
+
+  const setTargetlst = (newTargetStr: string) => {
+    setTargetStr(newTargetStr);
+    setTarget(newTargetStr.split(','));
+  }
 
   return (
     <div style={styles.pageWrap}>
@@ -12,7 +18,7 @@ const RoulettePage = () => {
         <div
           style={{ height: '200px' }}
         >
-          {/* 명단 */}
+          <textarea name="" id="" cols={30} rows={10} value={targetStr} onChange={(e) => {setTargetlst(e.target.value)}} style={{resize: 'none', width: '100%', height: '200px'}}></textarea>
         </div>
         <Roulette target={target}/>
       </div>

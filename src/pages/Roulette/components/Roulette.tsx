@@ -68,6 +68,7 @@ const Roulette = ({ target }: props) => {
 
   useEffect(() => {
     newMake();
+    console.log(target)
   }, [target]);
 
   return (
