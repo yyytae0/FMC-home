@@ -9,7 +9,7 @@ const RoulettePage = () => {
 
   const setTargetlst = (newTargetStr: string) => {
     setTargetStr(newTargetStr);
-    setTarget(newTargetStr.split(','));
+    setTarget(newTargetStr.split(',').map(t => t.trim()).filter(t => t!==''));
   }
 
   return (
